@@ -6,15 +6,15 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>员工列表</title>
+<title>学生列表</title>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
 </head>
 <body>
-
+<br><br><br>
 	<div class="container" align="center">
 		<div class="row">
 			<div class="col-md-12">
-				<h1>SSM 整合小实例--员工管理</h1>
+				<h1>SSM 框架快速整合实例--学生查询</h1>
 			</div>
 		</div>
 		<br>
@@ -31,20 +31,21 @@
 							<th>性别</th>
 							<th>电子邮箱</th>
 							<th>联系电话</th>
-							<th>部门</th>
+							<th>班级</th>
 							<th>操作</th>
 						</tr>
 					</thead>
 					<tbody>
-						<c:forEach items="${list }" var="employee">
+						<c:forEach items="${list }" var="student">
 							<tr>
 								<td><input type='checkbox' class='check_item'/></td>
-								<td>${employee.id }</td>
-								<td>${employee.name }</td>
-								<td>${employee.gender }</td>
-								<td>${employee.email }</td>
-								<td>${employee.tel }</td>
-								<td>${employee.department.name }</td>
+								<td>${student.id }</td>
+								<td>${student.name }</td>
+								<td>${student.gender }</td>
+								<td>${student.email }</td>
+								<td>${student.tel }</td>
+								<td>${student.cla }</td>
+
 								<td>
 									<button class="btn btn-primary btn-sm edit_btn">
 										<span class="glyphicon glyphicon-pencil">编辑</span>

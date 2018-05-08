@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SSMMaven" />
+        <module name="SsmDemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="SSMMaven" target="1.5" />
+      <module name="SsmDemo" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
